@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customizable Button Extension Options</title>
+    <style>
+      body {
+        width: 400px;
+        height: 200px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Customizable Button Extension Options</h1>
+    <form>
+      <label for="button-text">Button Text:</label>
+      <input type="text" id="button-text" name="button-text"><br><br>
+      <label for="button-color">Button Color:</label>
+      <input type="color" id="button-color" name="button-color"><br><br>
+      <button id="save-options">Save Options</button>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
