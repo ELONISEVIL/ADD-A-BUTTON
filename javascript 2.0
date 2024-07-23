@@ -1,0 +1,12 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  const saveButton = document.getElementById("save-options");
+
+  saveButton.addEventListener("click", function () {
+    const buttonText = document.getElementById("button-text").value;
+    const buttonColor = document.getElementById("button-color").value;
+
+    // Save options to storage
+    chrome.storage.sync.set({ buttonText, buttonColor });
+  });
+});
